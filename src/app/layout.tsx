@@ -4,6 +4,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/data";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { UtmTracker } from "@/components/UtmTracker";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -127,6 +128,7 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${jakarta.variable} scroll-smooth`}>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-XXXXXXX"} />
       <head>
         <script
           type="application/ld+json"
@@ -134,9 +136,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-inter antialiased bg-white text-slate-800 min-h-screen flex flex-col">
+        <UtmTracker />
         {children}
         <WhatsAppFloat />
-        <GoogleTagManager gtmId="GTM-XXXXXXX" />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from "@/lib/data";
+import { pushEvent } from "@/lib/dataLayer";
 
 export default function WhatsAppFloat() {
   return (
@@ -9,6 +10,7 @@ export default function WhatsAppFloat() {
       rel="noopener noreferrer"
       aria-label="Conversar com Antonio Demarchi via WhatsApp"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] text-white rounded-full shadow-lg shadow-green-500/30 px-4 py-3 font-semibold text-sm hover:bg-[#20bb5a] hover:shadow-xl hover:scale-105 transition-all duration-200 group"
+      onClick={() => pushEvent({ event: "Lead", lead_source: "float_whatsapp" })}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
