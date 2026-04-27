@@ -1,0 +1,338 @@
+Contexto de Atuação: Você é um Engenheiro de Software Full-Stack Senior e, simultaneamente, um Copywriter Especialista em SEO de Conversão. Sua missão é construir/refatorar meu site de Consultoria de TI para dominar o topo das buscas em Vassouras e Barra do Piraí em 90 dias.
+
+Diretriz de Conteúdo (Copywriting & SEO):
+
+Sem pressa na geração de texto: Não use placeholders ou textos genéricos (Lorem Ipsum). Escreva cada frase com foco em semântica de busca e persuasão.
+
+Linguagem de Autoridade: Utilize termos que demonstrem expertise técnica (.NET, AWS, Cloud, Segurança), mas adaptados para o empresário local do Vale do Café.
+
+Semântica Local: Integre naturalmente nomes de bairros e pontos de referência (Centro de Vassouras, Madruga, proximidades da Univassouras, Centro de Barra do Piraí) para fortalecer o SEO Local.
+
+Palavras-Chave de Intenção: Foque em termos como "Melhor Consultoria de TI", "Especialista AWS em Vassouras", "Suporte de TI para empresas em Barra do Piraí".
+
+Stack Tecnológica: Next.js (App Router), React, Tailwind CSS, TypeScript, next/font, Sanity.io.
+
+Instruções de Arquitetura e Performance Extremas:
+
+Rendering & Speed: Configure todas as rotas de serviços para usar ISR (Incremental Static Regeneration) com revalidação a cada 60 segundos. Implemente React Suspense com skeletons elegantes para que o conteúdo textual (SEO) seja priorizado e carregue instantaneamente.
+
+Asset Optimization:
+
+Substitua todas as tags <img> pelo componente next/image forçando formatos AVIF/WebP.
+
+Aplique o atributo priority obrigatoriamente no Hero Image de cada página para otimizar o LCP.
+
+Configure next/font para carregar fontes localmente (Google Fonts locais), garantindo CLS Zero.
+
+Third-Party Scripts: Utilize obrigatoriamente a biblioteca @next/third-parties para carregar GTM e Pixel em Web Workers, evitando impacto na Main Thread.
+
+Estratégia de SEO "Pulo do Gato":
+
+Estrutura de Páginas Dinâmicas: Gere rotas para:
+
+Serviços: /servicos/[slug] (Foco em: Cloud Computing, Backend .NET, DevOps AWS, Segurança de Dados).
+
+Localidades: /consultoria-ti-[cidade] (Vassouras, Barra do Piraí, Mendes e Paulo de Frontin).
+
+Schema Markup JSON-LD Profissional: No layout.tsx, implemente o Schema ProfessionalService.
+
+Injeção Dinâmica: O Schema deve conter as coordenadas GPS reais de Vassouras e Barra do Piraí.
+
+Campos: Preencha areaServed, knowsAbout (skills técnicas) e priceRange.
+
+Sitemap & Indexação: Configure um sitemap.ts dinâmico e um robots.txt que priorize o rastreamento das páginas de serviço locais.
+
+Instruções de Conversão & UX (Mobile First):
+
+CTA Persuasivo: Botões de "Solicitar Diagnóstico Gratuito" e WhatsApp flutuante estrategicamente posicionados.
+
+PWA: Configure o manifest.json para que o site seja instalável, aumentando a retenção.
+
+Acessibilidade (A11y): Conformidade total WCAG (contraste, labels e navegação fluida).
+
+AÇÃO IMEDIATA:
+Analise meus arquivos (ou crie a estrutura do zero). Gere o código e o texto simultaneamente, garantindo que o tom de voz seja o de um consultor de elite. Não avance para a próxima página até que o conteúdo SEO da anterior esteja "top", denso e otimizado.
+
+Dica de Execução para você:
+Assim que o Claude terminar a estrutura básica, dê a ele o comando final:
+
+"Claude, agora crie o script em Node/Python para injetar os metadados de geolocalização (Lat/Long de Vassouras) em todas as imagens da pasta /public/assets para selar o SEO de imagens local."
+
+Com isso, o Google vai entender que sua empresa não só "fala" de Vassouras, mas está tecnicamente ancorada lá. Boa sorte no topo!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################TRAGA O MELHOR PROMPT DETALHADO PARA O CLAUDE CODE :
+
+
+
+Sem alterar nada incremente que todo o texto do projeto tem que ser feito sem pressa usando as melhores palavras para SEO desse objetivo, como um copyriter senior especialista em SEO.
+
+
+
+Prompt para Claude Code: Dominância SEO Regional 2026
+
+Objetivo: Construir/Refatorar meu site de Consultoria de TI para rankear no topo em Vassouras e Barra do Piraí em 90 dias, com performance 100/100 no Lighthouse.
+
+Stack Tecnológica: Next.js (App Router), React, Tailwind CSS, TypeScript, next/font, Sanity.io.
+
+Instruções de Arquitetura e Performance:
+
+
+
+Rendering & Speed: Configure todas as rotas de serviços para usar ISR (Incremental Static Regeneration) com revalidação a cada 60 segundos. Implemente React Suspense para skeletons em componentes pesados para garantir que o conteúdo de texto (SEO) carregue instantaneamente.
+
+Asset Optimization: * Substitua todas as tags <img> pelo componente next/image forçando formatos AVIF/WebP.
+
+Aplique o atributo priority obrigatoriamente no Hero Image de cada página para otimizar o LCP.
+
+Configure next/font para carregar fontes localmente, eliminando requisições externas e garantindo CLS zero.
+
+Third-Party Scripts: Utilize obrigatoriamente a biblioteca @next/third-parties para carregar GTM e Analytics via web workers.
+
+Instruções de SEO Estratégico (O "Pulo do Gato"):
+
+
+
+Estrutura de Páginas: Crie um gerador de rotas dinâmicas para:
+
+Páginas de Serviço: /servicos/[slug] (Ex: Cloud Computing, Desenvolvimento Backend .NET, DevOps AWS).
+
+Páginas de Atendimento Local: /consultoria-ti-[cidade] para: Vassouras (foco no Centro, Madruga, Univassouras), Barra do Piraí, Mendes e Paulo de Frontin.
+
+Schema Markup JSON-LD: No layout.tsx principal, implemente o Schema ProfessionalService.
+
+Dinâmico: O Schema deve injetar as coordenadas GPS de Vassouras e Barra do Piraí.
+
+Propriedades: Preencha areaServed, knowsAbout (incluindo AWS, React, .NET) e priceRange.
+
+Sitemap & Robots: Configure um sitemap.ts dinâmico que inclua todas as novas páginas de serviço e localidade e um robots.txt otimizado para o Googlebot.
+
+Instruções de Conversão & UX:
+
+
+
+Mobile First: Design focado em conversão com botões de Call-to-Action (CTA) e WhatsApp flutuante sempre acessíveis.
+
+PWA: Configure o manifest.json e suporte a PWA para permitir instalação do site como app.
+
+Acessibilidade: Garanta conformidade WCAG (tags aria-label, contraste e navegação via teclado).
+
+Ação imediata: * Analise meus arquivos atuais e identifique onde aplicar essas melhorias.
+
+
+
+Se for um projeto novo, gere a estrutura de pastas e os componentes base seguindo estas regras de performance absoluta.
+
+Dica de mestre para usar com o Claude Code:
+
+Ao rodar este prompt, o Claude vai começar a criar os arquivos. Quando ele chegar na parte das imagens, peça para ele: "Crie um script em Python ou Node para injetar as coordenadas GPS (Geotagging) de Vassouras nas imagens da pasta public/assets". Isso vai selar sua relevância local no algoritmo de busca de imagens do Google.
+
+
+
+Prompt para Claude Code: Dominância SEO Regional 2026
+
+Objetivo: Construir/Refatorar meu site de Consultoria de TI para rankear no topo em Vassouras e Barra do Piraí em 90 dias, com performance 100/100 no Lighthouse.
+
+Stack Tecnológica: Next.js (App Router), React, Tailwind CSS, TypeScript, next/font, Sanity.io.
+
+Instruções de Arquitetura e Performance:
+
+
+
+Rendering & Speed: Configure todas as rotas de serviços para usar ISR (Incremental Static Regeneration) com revalidação a cada 60 segundos. Implemente React Suspense para skeletons em componentes pesados para garantir que o conteúdo de texto (SEO) carregue instantaneamente.
+
+Asset Optimization: * Substitua todas as tags <img> pelo componente next/image forçando formatos AVIF/WebP.
+
+Aplique o atributo priority obrigatoriamente no Hero Image de cada página para otimizar o LCP.
+
+Configure next/font para carregar fontes localmente, eliminando requisições externas e garantindo CLS zero.
+
+Third-Party Scripts: Utilize obrigatoriamente a biblioteca @next/third-parties para carregar GTM e Analytics via web workers.
+
+Instruções de SEO Estratégico (O "Pulo do Gato"):
+
+
+
+Estrutura de Páginas: Crie um gerador de rotas dinâmicas para:
+
+Páginas de Serviço: /servicos/[slug] (Ex: Cloud Computing, Desenvolvimento Backend .NET, DevOps AWS).
+
+Páginas de Atendimento Local: /consultoria-ti-[cidade] para: Vassouras (foco no Centro, Madruga, Univassouras), Barra do Piraí, Mendes e Paulo de Frontin.
+
+Schema Markup JSON-LD: No layout.tsx principal, implemente o Schema ProfessionalService.
+
+Dinâmico: O Schema deve injetar as coordenadas GPS de Vassouras e Barra do Piraí.
+
+Propriedades: Preencha areaServed, knowsAbout (incluindo AWS, React, .NET) e priceRange.
+
+Sitemap & Robots: Configure um sitemap.ts dinâmico que inclua todas as novas páginas de serviço e localidade e um robots.txt otimizado para o Googlebot.
+
+Instruções de Conversão & UX:
+
+
+
+Mobile First: Design focado em conversão com botões de Call-to-Action (CTA) e WhatsApp flutuante sempre acessíveis.
+
+PWA: Configure o manifest.json e suporte a PWA para permitir instalação do site como app.
+
+Acessibilidade: Garanta conformidade WCAG (tags aria-label, contraste e navegação via teclado).
+
+Ação imediata: * Analise meus arquivos atuais e identifique onde aplicar essas melhorias.
+
+
+
+Se for um projeto novo, gere a estrutura de pastas e os componentes base seguindo estas regras de performance absoluta.
+
+Dica de mestre para usar com o Claude Code:
+
+Ao rodar este prompt, o Claude vai começar a criar os arquivos. Quando ele chegar na parte das imagens, peça para ele: "Crie um script em Python ou Node para injetar as coordenadas GPS (Geotagging) de Vassouras nas imagens da pasta public/assets". Isso vai selar sua relevância local no algoritmo de busca de imagens do Google.Faça o Melhor Prompt para o claude code:
+
+
+
+Objetivo: Ficar topo Consultoria de TI em Vassouras e Barra do Piraí em todas as plataformas em 3 meses.Páginas de Atendimento: Crie seções no seu site como "Consultoria de TI no Centro de Vassouras" 
+
+. Se você atende no Centro, em Madruga ou perto da Univassouras, o Google precisa saber disso.
+
+Páginas de Serviço Específicas: Em vez de uma página única de "Serviços", crie páginas dedicadas para cada solução (ex: Cloud Computing, Desenvolvimento Backend, DevOps). Isso permite que você ranqueie para termos técnicos específicos que grandes empresas da região buscam.
+
+especialista AWS Vassouras
+
+Estar na primeira página é obrigatório ter foco em converter.
+
+Landing Pages Rápidas: O site deve ser extremamente rápido e otimizado para mobile.
+
+
+
+ Implementação de Schema Markup (Dados Estruturados)
+
+Isso é o que diferencia um amador de um profissional no SEO técnico.
+
+
+
+Use o Schema de "LocalBusiness" e "ProfessionalService" no código do seu site. Isso diz ao Google exatamente qual é o seu telefone, endereço e especialidade (ex: Consultant > IT Solutions), ajudando você a aparecer nos "Rich Snippets" (aqueles resultados com estrelinhas e informações extras que chamam mais atenção).
+
+Contratar consultoria de tecnologia, Empresa de infraestrutura de TI"
+
+
+
+Vassouras,Barra do Piraí, Mendes e Paulo de Frontin,
+
+
+
+##
+
+A Arquitetura de Performance Máxima
+
+Para vencer no Core Web Vitals, foque nestes pilares:
+
+
+
+1. Rendering Strategy: ISR (Incremental Static Regeneration)
+
+Não use apenas SSR (Server Side Rendering). Use ISR.
+
+
+
+O Macete: O Next.js gera páginas estáticas ultravelozes, mas as atualiza em segundo plano conforme você define (ex: a cada 60 segundos). Isso dá a velocidade de um site estático com o poder de um site dinâmico.
+
+2. Image Optimization (O "vilão" da velocidade)
+
+Use o componente <Image /> do Next.js.
+
+Hack: Force o formato WebP ou AVIF.
+
+LCP Hack: Para a imagem principal (Hero/Banner), use a propriedade priority. Isso avisa ao navegador para baixar essa imagem antes de qualquer outra coisa.
+
+3. Fontes Locais e Variable Fonts
+
+Nunca chame fontes do Google Fonts via link externo. Use next/font.
+
+Isso elimina o "pulo" da fonte (Layout Shift) e economiza uma requisição de rede.
+
+Hacks e Macetes "Mão na Massa" para o Topo
+
+1. O "Hack" do Schema Markup JSON-LD
+
+Não deixe o Google adivinhar quem você é. Insira um script de dados estruturados no seu layout.tsx:
+
+
+
+Use o tipo ProfessionalService.
+
+Macete: Inclua a propriedade areaServed com o nome "Vassouras" e cidades vizinhas. Inclua knowsAbout com suas tecnologias (React, AWS, .NET).
+
+2. Streaming & Suspense
+
+Use o Suspense do React para carregar partes pesadas do site (como um dashboard ou feed) depois que o conteúdo principal (texto e SEO) já apareceu. O usuário vê o site em milissegundos, enquanto os dados "pesados" carregam logo em seguida.
+
+
+
+3. Robots.txt e Sitemap Dinâmico
+
+Configure o sitemap.ts no Next.js para que, toda vez que você postar um novo projeto ou serviço de consultoria, o Google seja notificado automaticamente.
+
+4. Otimização de Terceiros (O "Matador de Performance")
+
+Se for usar GTM (Google Tag Manager) ou Pixel do Meta:
+
+
+
+Hack: Use a biblioteca @next/third-parties. Ela carrega esses scripts em uma web worker separada, para que eles não travem o carregamento do seu site.
+
+Checkpoint para Subir Rapidamente
+
+Se você implementar isso hoje, em uma semana você estará tecnicamente à frente de 99% dos sites da região:
+
+
+
+Hospedagem na Vercel: Use os servidores de São Paulo (sa-east-1) para menor latência em Vassouras.
+
+PWA (Progressive Web App): Ative o suporte para que o empresário local possa "instalar" seu site no celular dele. Isso gera autoridade absurda.
+
+Acessibilidade (A11y): Garanta contraste alto e tags aria-label. O Google usa acessibilidade como critério de rankeamento direto em 2026.
+
+Resultado final esperado:
+
+
+
+Performance: 100/100 no Lighthouse.
+
+LCP (Largest Contentful Paint): Abaixo de 1.2s.
+
+CLS (Cumulative Layout Shift): 0.
+
+
+
+
+
+Coordenadas GPS de Vassouras nos metadados. 
